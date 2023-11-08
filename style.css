@@ -17,7 +17,7 @@ body {
 
 .container {
     margin: 200px auto;
-    width: 40%;
+    max-width: 400px;
     height: auto;
     border-radius: 20px;
     padding: 10px;
@@ -54,20 +54,35 @@ p {
 }
 
 
-@media (max-width: 670px) {
+@media (max-width: 470px) {
+
+    .container {
+        margin: 200px auto;
+        max-width: 88%;
+        height: auto;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
 
     .content-text,
     .content-header {
-        margin: 0px 15px 5px 15px;
+        margin: 0px 10px 0px 10px;
     }
 
 
     h1 {
-        font-size: 19px;
+        font-size: 1em;
     }
 
     p {
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    img {
+        margin-bottom: 2px;
     }
 
 }
